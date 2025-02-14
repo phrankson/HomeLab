@@ -1,0 +1,7 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+namespace: linkding
+resources:
+  - deployment.yaml
+  - namespace.yaml
+
