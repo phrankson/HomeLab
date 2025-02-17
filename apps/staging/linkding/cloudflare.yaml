@@ -67,7 +67,7 @@ metadata:
 data:
   config.yaml: |
     # Name of the tunnel you want to run
-    
+
     tunnel: utobong
 
     credentials-file: /etc/cloudflared/creds/cred.json

@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system  # Namespace where this resource lives
 spec:
   # How often Flux should reconcile this Kustomization
-  interval: 10m
+  interval: 1m
   
   # Maximum time to wait for resource operations to complete
   timeout: 5m
@@ -24,3 +24,9 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
+
+    decryption:
+    provider: sops
+    secretRef:
+      name: sops-age 
+      
