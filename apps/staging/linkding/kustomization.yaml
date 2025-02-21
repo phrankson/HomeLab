@@ -6,4 +6,5 @@ resources:
   - cloudflare.yaml
   - test-secret.yaml
   - utobong-cloudflared.yaml
+  - linkding-cm.yaml
   

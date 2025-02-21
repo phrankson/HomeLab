@@ -6,5 +6,4 @@ resources:
   - namespace.yaml
   - storage.yaml
   - service.yaml
-  - linkding-cm.yaml
   
