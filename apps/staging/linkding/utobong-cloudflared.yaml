@@ -6,8 +6,6 @@ metadata:
     creationTimestamp: "2025-02-17T14:19:39Z"
     name: utobong-cloudflared
     namespace: linkding
-    resourceVersion: "696939"
-    uid: 07508dc0-c2b1-4b82-b3d6-ce2647972b9e
 type: Opaque
 sops:
     kms: []
