@@ -1,0 +1,31 @@
+apiVersion: v1
+data:
+    cred.json: ENC[AES256_GCM,data:6qRflGW1WVyPf7P9jUabwjqTEOBpxsddJGbxUznF+NYMsKQS5wZXcPZF39czpLnewSr9iJDZ6USrfrJI53b2p91eoU1AjdpvWD5pBQW6y5cF373MMQEGHUeiBeLBCQyaPOBQfLpciYlWoAAKkEsBzuKh/RuGBarDUcl9StGpTPVUJk7DNhSSaHbm/0tZKKw4pRCffj4iBJkkf6V7UMP24jIoEd5e/cDRAiR27dH+DNwJv8T3/od2fsms+UkavxLuynl4TmsOSM/2PBLy8Z9tiiuV3DnKkjJe,iv:9YPv66bFNLeIcItk3cTsUsz84xL3oUVyichBr6qYPv4=,tag:1Moh8dFcrqhkvUarszrJ6g==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: "2025-02-17T14:19:39Z"
+    name: utobong-cloudflared
+    namespace: linkding
+    resourceVersion: "696939"
+    uid: 07508dc0-c2b1-4b82-b3d6-ce2647972b9e
+type: Opaque
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1qrzx3hz6yxwkkgvlqjeaq2rgggq8f6yx63p3kkrktdasxedn43fsa075ln
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA4SkNaQjdSclpWUkh3Q2s1
+            dTJ4dGw0clJqRHlxMWFhYzBQbWZOenIyTDFrCmJ4ME5GRnVVSTBqV0RQUXIvQzd2
+            ZlZ1anVsWjh3VDR2Mk1hU1Z1NHdncUEKLS0tIGd5MDBCc2dqR2g3MWU3dUcyWHNm
+            SzJqNXJGd1FPNU9oTUwwUElzckRZWDQKofSoUH/3ClypPDeUTSqJa5GakYiNv7+K
+            X7cSgz8FJbXDjPil4dYwJB0NHNLDX1wiJaWHI0AfvZbuxnMewklLNA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-02-21T07:33:15Z"
+    mac: ENC[AES256_GCM,data:NJisX/YzS09kYEDFwWdFY3PfruHmnGH6OpLSSaAz6Qbvo9q3hzsW7SpP//O+yNVFrzFDxNE44K3Qs5zKQo8lbzJSSXPl+MC1XblM3lSltdJXIIQCN9UmkRN56McDIz1TLMVIa/TOSRdwJYnNDAs/9hHnGyrUarbxqNm4ZSvMAYs=,iv:5bCcmzTSUjGk8fuZ2i8S7GnurPTbCQEzzxTbFIpq0Ys=,tag:c/Vb/AwriWTW/DWUWOZmMw==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.9.4
