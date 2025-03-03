@@ -1,0 +1,64 @@
+# This manifest defines a Kustomization resource for Flux CD to manage application deployments
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: monitoring-controllers # Identifier for this Kustomization
+  namespace: flux-system  # Namespace where this resource lives
+spec:
+  # How often Flux should reconcile this Kustomization
+  interval: 1m
+  
+  # Maximum time to wait for resource operations to complete
+  timeout: 5m
+  
+  # dependsOn:
+  # - name: infra-configs
+  
+  # Path to the directory containing Kustomize overlays and resources
+  path: ./monitoring/controllers/staging
+  
+  # Enable garbage collection - remove resources that are no longer present in Git
+  prune: true
+  
+  # Reference to the Git repo containing the Kustomize files that Flux should apply for the cluster
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+
+  # decryption:
+  #   provider: sops
+  #   secretRef:
+  #     name: sops-age 
+
+---
+
+# apiVersion: kustomize.toolkit.fluxcd.io/v1
+# kind: Kustomization
+# metadata:
+#   name: monitoring - config  # Identifier for this Kustomization
+#   namespace: flux-system  # Namespace where this resource lives
+# spec:
+#   # How often Flux should reconcile this Kustomization
+#   interval: 1m
+  
+#   # Maximum time to wait for resource operations to complete
+#   timeout: 5m
+  
+#   # dependsOn:
+#   # - name: infra-configs
+  
+#   # Path to the directory containing Kustomize overlays and resources
+#   path: ./monitoring/configs/staging
+  
+#   # Enable garbage collection - remove resources that are no longer present in Git
+#   prune: true
+  
+#   # Reference to the Git repo containing the Kustomize files that Flux should apply for the cluster
+#   sourceRef:
+#     kind: GitRepository
+#     name: flux-system
+
+#   # decryption:
+#   #   provider: sops
+#   #   secretRef:
+#   #     name: sops-age 
