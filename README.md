@@ -1,4 +1,4 @@
-# 🚀 Homelab: Kubernetes GitOps Setup  
+# Homelab: Kubernetes GitOps Setup  
 
 Welcome to my homelab repository! This setup is designed to run a **GitOps-driven** Kubernetes environment using **FluxCD**. The goal is to self-host applications efficiently while leveraging cloud-native best practices.  
 
@@ -10,7 +10,7 @@ Welcome to my homelab repository! This setup is designed to run a **GitOps-drive
 * **Comprehensive Monitoring:** kube-prometheus-stack allows me to monitor the health and performance of my cluster and applications.
 * **Learning & Experimentation:** This homelab serves as a platform for me to explore new technologies and deepen my understanding of Kubernetes and cloud-native practices.
 
-## 🏡 Homelab Infrastructure  
+## Homelab Infrastructure  
 - **Hardware**:  
   - Raspberry Pi 3B  
   - Dell XPS Laptop  
@@ -24,17 +24,17 @@ Welcome to my homelab repository! This setup is designed to run a **GitOps-drive
 - **Secrets Management**:  
   - [SOPS with Age](https://github.com/mozilla/sops) – Securely encrypts Kubernetes secrets  
 
-## 🔄 GitOps with FluxCD  
+## GitOps with FluxCD  
 This homelab follows the **monorepo** approach with FluxCD, meaning all Kubernetes manifests and configurations are stored in a single repository and automatically applied to the cluster.  
 
 ## 🔍 Monitoring & Observability  
 - [Kube-Prometheus-Stack](https://github.com/prometheus-operator/kube-prometheus) – Prometheus, Grafana, and Alertmanager for full-stack monitoring  
 - **(Next) Add Loki & Tempo for full observability**  
 
-## 📚 Self-Hosted Applications  
+## Self-Hosted Applications  
 - [Linkding](https://github.com/sissbruecker/linkding) – Self-hosted bookmarking service   
 
-## 🎯 Future Plans  
+## Future Plans  
 - Extend monitoring with **Loki**   
 - Deploy additional self-hosted services  
 - Automated Backups
