@@ -35,6 +35,6 @@ spec:
         enabled: true
         hosts:
           - grf.utobong.me
-        ingressClassName: nginx
+        ingressClassName: traefik
         path: /
         
