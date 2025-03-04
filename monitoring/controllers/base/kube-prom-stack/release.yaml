@@ -37,4 +37,8 @@ spec:
           - grf.utobong.me
         ingressClassName: traefik
         path: /
+        pathType: Prefix
+        annotation: 
+          kubernetes.io/ingress.class: traefik
+
         
