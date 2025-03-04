@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: kube-prometheus-stack
-      version: "66.2.2"
+      version: "66.2.2 "
 
       # version: "58.x"
 
@@ -31,3 +31,10 @@ spec:
   values:
     grafana:
       adminPassword: frankson
+      ingress: 
+        enabled: true
+        hosts:
+          - grf.utobong.me
+        ingressClassName: nginx
+        path: /
+        
