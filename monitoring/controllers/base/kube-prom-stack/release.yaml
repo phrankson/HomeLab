@@ -32,7 +32,7 @@ spec:
     grafana:
       adminPassword: frankson
       ingress: 
-        enabled: false
+        enabled: true
         hosts:
           - grf.utobong.me
         ingressClassName: traefik
