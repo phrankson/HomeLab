@@ -77,8 +77,8 @@ data:
     no-autoupdate: true
 
     ingress:
-    - hostname: ld.utobong.me
-      service: http://linkding:9090
+    # - hostname: ld.utobong.me
+      # service: http://linkding:9090
     
     - hostname: grf.utobong.me
       service: http://kube-prometheus-stack-grafana.monitoring.svc.cluster.local:80
